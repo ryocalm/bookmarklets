@@ -14,7 +14,10 @@ function splash(msg, custom_set) {
     outer_style:
       'top:0px; left:0px; position:fixed; z-index:1000; width:100%; height:100%;',
     message_style:
-      'padding:0.5em; font-size:4em; color:white; background-color:gray; position:absolute; top:50%; left:50%; transform:translateY(-50%) translateX(-50%); -webkit-transform:translateY(-50%) translateX(-50%);',
+      'padding:0.5em; font-size:4em; color:white; background-color:gray;'
+      + 'position:absolute; top:50%; left:50%;'
+      + 'transform:translateY(-50%) translateX(-50%);'
+      + ' -webkit-transform:translateY(-50%) translateX(-50%);',
     style_id: 'append_splash_msg_style',
     outer_id: 'append_splash_msg',
     message_id: 'append_splash_msg_inner',
@@ -28,16 +31,21 @@ function splash(msg, custom_set) {
   if (!document.getElementById(set.style_id)) {
     const style = document.createElement('style');
     style.id = set.style_id;
-    style.innerHTML = "#" + set.outer_id + " { " + set.outer_style + " } " +
-      "#" + set.outer_id + " > #" + set.message_id +
-      " {opacity: 0;transition: opacity " + set.fadeout_sec + "s " +
-      set.trans_out + ";-webkit-transition: opacity " + set.fadeout_sec +
-      "s " + set.trans_out + ";} " + "#" + set.outer_id + ".show > #" +
-      set.message_id + " {opacity: " + set.opacity +
-      ";transition: opacity " + set.fadein_sec + "s " + set.trans_in +
-      ";-webkit-transition: opacity " + set.fadein_sec + "s " +
-      set.trans_in + ";}" + "#" + set.message_id + " { " +
-      set.message_style + " } ";
+    style.innerHTML =
+      `#${set.outer_id} { ${set.outer_style} }`
+      + `#${set.outer_id} > #${set.message_id}`
+      + `{`
+      + `opacity: 0;`
+      + `transition: opacity ${set.fadeout_sec}s ${set.trans_out};`
+      + `-webkit-transition: opacity ${set.fadeout_sec}s ${set.trans_out};`
+      + `}`
+      + `#${set.outer_id}.show > #${set.message_id}`
+      + `{`
+      + `opacity: ${set.opacity};`
+      + `transition: opacity ${set.fadein_sec}s ${set.trans_in};`
+      + `-webkit-transition: opacity ${set.fadein_sec}s ${set.trans_in};`
+      + `}`
+      + `#${set.message_id} { ${set.message_style} }`;
     document.body.appendChild(style);
   }
   if ((e = document.getElementById(set.outer_id))) {
@@ -51,7 +59,6 @@ function splash(msg, custom_set) {
       e.parentNode.removeChild(e);
     if (set.on_splash_vanished) set.on_splash_vanished();
   };
-  /* splash.innerHTML = '<div id="' + set.message_id + '" class="' + set.message_class + '">' + msg + '</div>'; */
   splash.innerHTML = `<div id="${set.message_id}" class="${set.message_class}">${msg}</div>`;
   document.body.appendChild(splash);
   setTimeout(() => {
