@@ -11,18 +11,19 @@ const replaceTable = [
   { search: 'イト－ヨ－カド－　フク', replace: 'ヨーカドー' },
   { search: 'イト－ヨ－カド－ フク', replace: 'ヨーカドー' },
   { search: 'イトーヨーカドー フクズミテン', replace: 'ヨーカドー' },
-  { search: 'エヌテイテイヒガシニホンサツポロビ', replace: 'NTT病院' },
-
   { search: 'ＷＩＫＩＰＥＤＩＡ', replace: 'Wikipedia' },
+  { search: 'エヌテイテイヒガシニホンサツポロビ', replace: 'NTT病院' },
   { search: 'オムニセブン（イト－ヨ－カド－）', replace: 'ヨーカドー' },
   { search: 'オロシウリス－パ－　キヨ', replace: '卸売スーパー' },
 
   { search: 'カフェクロワッサン', replace: 'カフェクロワッサン' },
-  { search: 'キノトヤ', replace: 'きのとや' },
   { search: 'キタビシハイヤーカブシキガイシヤ', replace: 'タクシー' },
+  { search: 'キノトヤ', replace: 'きのとや' },
+  { search: 'キノクニヤシヨテンサツポロホンテ/ID', replace: '紀伊國屋書店' },
   { search: 'キヨウワコウツウカブシキガイシヤ', replace: 'タクシー' },
   { search: 'キンセイジドウシヤ（カ', replace: 'タクシー' },
   { search: 'キンセイジドウシヤ（カ/ID', replace: 'タクシー' },
+  { search: 'キンセイジドウシヤ(カ/ID', replace: 'タクシー' },
   { search: 'ＫＤＤＩ', replace: 'KDDI' },
   { search: 'KDDIゴリヨウリヨウキン', replace: 'KDDI' },
   { search: 'ケイオウプラザホテルサツポロ', replace: '京王プラザホテル札幌' },
@@ -35,7 +36,6 @@ const replaceTable = [
   { search: 'サツポロシスイドウリヨウキン', replace: '水道局' },
   { search: 'サツポロドウシンブンカセンタ－', replace: '道新文化センター' },
   { search: 'サツポロパルコ/ID', replace: 'パルコ' },
-
   { search: 'サンチヨクセイセンイチハ', replace: '生鮮市場' },
   { search: 'サンワコウツウカブシキガイシヤ', replace: 'タクシー' },
   { search: 'シンセツコウツウカブシキガイシヤ', replace: 'タクシー' },
@@ -47,6 +47,7 @@ const replaceTable = [
   { search: 'セイユウ　キヨ', replace: '西友' },
   { search: 'セブン－イレブン', replace: 'セブンイレブン' },
   { search: 'セブンイレブン', replace: 'セブンイレブン' },
+
   { search: 'ダイマルフジイセントラル', replace: '大丸藤井セントラル' },
   { search: 'ツバメジドウシヤカブシキガイシ', replace: 'タクシー' },
   { search: 'ツルハ', replace: 'ツルハ' },
@@ -77,6 +78,7 @@ const replaceTable = [
   { search: 'ミヨウジヨウジドウシヤカブシキ', replace: 'タクシー' },
   { search: 'モスバーガー', replace: 'モスバーガー' },
   { search: 'モスバ－ガ－', replace: 'モスバーガー' },
+  { search: 'MONOTARO.COM', replace: 'モノタロウ' },
 
   { search: 'ユニクロ　ジ－ユ－　オ', replace: 'ユニクロ・GU' },
   { search: 'ヨドバシカメラ　ツウシンハンバイ', replace: 'ヨドバシ' },
