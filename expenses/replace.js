@@ -11,6 +11,7 @@
     { search: 'イト－ヨ－カド－　フク', replace: 'ヨーカドー' },
     { search: 'イト－ヨ－カド－ フク', replace: 'ヨーカドー' },
     { search: 'イトーヨーカドー フクズミテン', replace: 'ヨーカドー' },
+    { search: 'イト-ヨ-カド- フク', replace: 'ヨーカドー' },
     { search: 'ＷＩＫＩＰＥＤＩＡ', replace: 'Wikipedia' },
     { search: 'エヌテイテイヒガシニホンサツポロビ', replace: 'NTT病院' },
     { search: 'オムニセブン（イト－ヨ－カド－）', replace: 'ヨーカドー' },
@@ -34,6 +35,7 @@
     { search: 'サツポロシスイドウリヨウキン', replace: '水道局' },
     { search: 'サツポロドウシンブンカセンタ－', replace: '道新文化センター' },
     { search: 'サツポロパルコ', replace: 'パルコ' },
+    { search: 'サッポロミツコシ', replace: '三越' },
     { search: 'サンチヨクセイセンイチハ', replace: '生鮮市場' },
     { search: 'サンワコウツウカブシキガイシヤ', replace: 'タクシー' },
     { search: 'シンセツコウツウカブシキガイシヤ', replace: 'タクシー' },
@@ -52,6 +54,7 @@
     { search: 'デイ-シ-エム', replace: 'ホーマック' },
     { search: 'デイ－シ－エムホ－マツク', replace: 'ホーマック' },
     { search: 'デンシシヨウトリヒキヨドバシカメラ', replace: 'ヨドバシ' },
+    { search: 'トウキユウヒヤツカテン サツポロテン', replace: '東急百貨店' },
     { search: 'ドト－ルコ－ヒ－', replace: 'ドトール' },
 
     { search: 'ニシマツヤチエ－ン', replace: '西松屋' },
@@ -62,6 +65,7 @@
     { search: 'パセオテン', replace: 'パセオ' },
     { search: 'ヒガシコウツカブシキガイシヤ', replace: 'タクシー' },
     { search: 'ビヨウプラ－ジユ', replace: 'プラージュ' },
+    { search: 'ビヨウプラ-ジユ', replace: 'プラージュ' },
     { search: 'ヒラギシハイヤ－', replace: 'タクシー' },
     { search: 'フアツシヨンセンターシマムラ', replace: 'しまむら' },
     { search: 'フアミリ－マ－ト', replace: 'ファミリーマート' },
@@ -79,7 +83,9 @@
     { search: 'MONOTARO.COM', replace: 'モノタロウ' },
 
     { search: 'ユニクロ　ジ－ユ－　オ', replace: 'ユニクロ・GU' },
+    { search: 'ユニクロ ジ-ユ- プラステオンライ', replace: 'ユニクロ・GU' },
     { search: 'ヨドバシカメラ　ツウシンハンバイ', replace: 'ヨドバシ' },
+    { search: 'ヨドバシカメラ ツウシンハンバイ(', replace: 'ヨドバシ' },
 
     { search: 'ラクタクビンシンサツ', replace: 'net AEON' },
     { search: '（ラクテン', replace: '楽天' },
@@ -89,8 +95,8 @@
   ];
 
   /**
-   * 
-   * @param {String} shop 
+   *
+   * @param {String} shop
    * @param {Array} table
    * @returns {String}
    */
