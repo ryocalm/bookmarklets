@@ -85,7 +85,7 @@
     { search: 'ユニクロ　ジ－ユ－　オ', replace: 'ユニクロ・GU' },
     { search: 'ユニクロ ジ-ユ- プラステオンライ', replace: 'ユニクロ・GU' },
     { search: 'ヨドバシカメラ　ツウシンハンバイ', replace: 'ヨドバシ' },
-    { search: 'ヨドバシカメラ ツウシンハンバイ(', replace: 'ヨドバシ' },
+    { search: 'ヨドバシカメラ ツウシンハンバイ', replace: 'ヨドバシ' },
 
     { search: 'ラクタクビンシンサツ', replace: 'net AEON' },
     { search: '（ラクテン', replace: '楽天' },
