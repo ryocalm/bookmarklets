@@ -63,6 +63,7 @@
     { search: 'ニトリ ネツト', replace: 'ニトリ' },
 
     { search: 'パセオテン', replace: 'パセオ' },
+    { search: 'ピヴオ', replace: 'ピヴォ' },
     { search: 'ヒガシコウツカブシキガイシヤ', replace: 'タクシー' },
     { search: 'ビヨウプラ－ジユ', replace: 'プラージュ' },
     { search: 'ビヨウプラ-ジユ', replace: 'プラージュ' },
