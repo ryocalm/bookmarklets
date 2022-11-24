@@ -42,6 +42,7 @@
     { search: 'ス－パ－ア－クス', replace: 'ARCS' },
     { search: 'ス-パ-ア-クス キタノテン', replace: 'ARCS' },
     { search: 'セイコ－マ－ト', replace: 'セイコ－マ－ト' },
+    { search: 'セイコ-マ-ト', replace: 'セイコ－マ－ト' },
     { search: 'セイユウネツトス－パ－', replace: 'net 西友' },
     { search: 'セイユウネットス-パ-', replace: 'net 西友' },
     { search: 'セイユウ　キヨ', replace: '西友' },
